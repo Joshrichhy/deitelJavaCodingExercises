@@ -20,20 +20,20 @@ double year2025 = year2024 + (0.01 * year2024);
 double year2026 = year2025 + (0.01 * year2025);
 
 System.out.print("Enter year between 2023 and 2026: ");
-int value = input.nextInt();
+int year = input.nextInt();
 	
 
-	if (value == 2023) {
+	if (year == 2023) {
 	System.out.printf("estimated world population is %.0f", year2023);
 }  
-	if (value == 2024) {
+	if (year == 2024) {
 	System.out.printf("estimated world population is %.0f", year2024);
 
 }  
-	if (value == 2025) {
+	if (year == 2025) {
 	System.out.printf("estimated world population is %.0f", year2025);
 }   
-	if (value == 2026) {
+	if (year == 2026) {
 	System.out.printf("estimated world population is %.0f", year2026);
 }
 
