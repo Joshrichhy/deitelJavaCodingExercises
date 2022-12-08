@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class methodForPrimeNumber {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        primeNumber(5);
-        primeNumberUpToTenThousand();
+        displayPrimeNumber(7);
+      primeNumberUpToTenThousand(10);
 
 
     }
@@ -14,33 +14,45 @@ public class methodForPrimeNumber {
         int counter = 0;
         for (int count = 1; count <= number; count++) {
             if (number % count == 0){
-                System.out.println(count);
                 counter ++;}
-
         }
         if (counter == 2){
-            System.out.println("Number is a prime Number");
+            System.out.println(number + " Number is a prime Number");
         }
         else {
-            System.out.println("number is not a Prime Number");
+            System.out.println(number + " number is not a Prime Number");
         }
+
     }
 
-    private static void primeNumberUpToTenThousand(){
-        int counter = 0;
-        for (int count = 1; count <= 10000; count++) {
-            for ( int divisibleNumber = 1; divisibleNumber <= count; divisibleNumber++) {
-                if (count % divisibleNumber == 0){
+    private static void primeNumberUpToTenThousand(int number){
+        if (number <= 10000){
+
+        for (int counting = 1; counting <= number; counting++) {
+            int counter = 0;
+            for ( int numberThatCanDivide = 1; numberThatCanDivide <= counting; numberThatCanDivide++) {
+                if (counting % numberThatCanDivide == 0){
                     counter ++;}
-
-
+                }
                 if (counter == 2){
-                    System.out.println(count);}
-            }
+                    System.out.println(counting);}
+        }
 
+        }
+        else {
+            System.out.println("ooops, too large, input number below 10,000");
+        }
+    }
+
+    private static void displayPrimeNumber(int number){
+
+        for (int count = 0; count < number; count++) {
+            primeNumber(count);
         }
 
 
-
     }
+
+
 }
+
