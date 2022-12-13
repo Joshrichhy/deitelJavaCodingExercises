@@ -20,7 +20,7 @@ public class Example {
         int sum = 0;
 
         for (int index = 0; index < numberOfScores; index++) {
-            System.out.println("Enter number" + (index + 1));
+            System.out.println("Enter number " + (index + 1));
             int score = scanner.nextInt();
             scores[index] = score;
 

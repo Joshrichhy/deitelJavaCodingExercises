@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class methodForPrimeNumber {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        displayPrimeNumber(7);
-      primeNumberUpToTenThousand(10);
+       // displayPrimeNumber(7);
+      primeNumberUpToTenThousand(10000);
 
 
     }
@@ -27,16 +27,20 @@ public class methodForPrimeNumber {
 
     private static void primeNumberUpToTenThousand(int number){
         if (number <= 10000){
-
+        int numberOfPrimeNumber = 0;
         for (int counting = 1; counting <= number; counting++) {
             int counter = 0;
             for ( int numberThatCanDivide = 1; numberThatCanDivide <= counting; numberThatCanDivide++) {
                 if (counting % numberThatCanDivide == 0){
                     counter ++;}
+
                 }
                 if (counter == 2){
+                    numberOfPrimeNumber++;
                     System.out.println(counting);}
+
         }
+            System.out.println("number of Prime numbers: " + numberOfPrimeNumber);
 
         }
         else {

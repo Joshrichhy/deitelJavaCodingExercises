@@ -63,5 +63,8 @@ else{
 
         return sum;
     }
+    private static double balance(double money){
+        return money;
+    }
 
 }

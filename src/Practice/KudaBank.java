@@ -4,6 +4,8 @@ public class KudaBank {
     private String name;
     private double balance;
 
+    private double transfer;
+
     public KudaBank(String name, double balance) {
         this.name = name;
         this.balance = balance;
@@ -21,7 +23,7 @@ public class KudaBank {
         return balance;
     }
 
-    public void setBalance(double balance) {
+   public void setBalance(double balance) {
         this.balance = balance;
     }
 
@@ -29,4 +31,11 @@ public class KudaBank {
         balance = balance - amount;
         return "transfer successful";
     }
+
+    public double deposit (double amount){
+        balance = balance + amount;
+        return balance;
+
+    }
+
 }
