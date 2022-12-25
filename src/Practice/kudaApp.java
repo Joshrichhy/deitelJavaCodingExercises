@@ -12,6 +12,8 @@ public class kudaApp {
 
        // System.out.println("Enter name of Account: ");
         //String name = input.nextLine();
+
+
         //kuda.setName(name);
 
         System.out.println("amount to transfer");

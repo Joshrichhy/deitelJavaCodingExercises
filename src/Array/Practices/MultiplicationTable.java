@@ -17,6 +17,6 @@ public class MultiplicationTable {
             Sum += GradeBook[count];
         }
         int average = Sum/GradeBook.length;
-        System.out.printf("%d%n%d", Sum, average);
+        System.out.printf("%-19d%d", Sum, average);
     }
 }
