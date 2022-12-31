@@ -92,7 +92,7 @@ public class SemicolonMallTest {
     }
 
     public static void cartDisplay(){
-        System.out.printf("%s%n%s%n%s%n%s%n%s%n", semicolonMall.getStoreName(), semicolonMall.getLocation(),
+        System.out.printf("Store Name: %s%nLocation: %s%nTelephone Number: %s%nCashier Name: %s%nCustomer Name: %s%n", semicolonMall.getStoreName(), semicolonMall.getLocation(),
                 semicolonMall.getTelephoneNumber(), semicolonMall.getCashierName(), semicolonMall.getCustomersName());
 
         lines();

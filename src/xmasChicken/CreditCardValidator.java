@@ -14,24 +14,24 @@ public class CreditCardValidator {
             cardDetailsArray[index] = String.valueOf(cardDetails.charAt(index));
 
         }
-        System.out.println(Arrays.toString(cardDetailsArray));
+        System.out.println("***************************************");
         if (cardDetailsArray.length < 13 || cardDetailsArray.length > 16) {
             System.out.println("Card number is incorrect, please try again");
 
         } else {
 
             if (Objects.equals(cardDetailsArray[0], "4")) {
-                System.out.println("Visa Card");
+                System.out.println("**Credit Card Type: Visa Card");
             } else if (Objects.equals(cardDetailsArray[0], "5")) {
-                System.out.println("Master Card");
+                System.out.println("**Credit Card Type: MasterCard");
 
             } else if (Objects.equals(cardDetailsArray[0], "3") && Objects.equals(cardDetailsArray[1], "7")) {
-                System.out.println("American Express Cards");
+                System.out.println("**Credit Card Type: American Express Cards");
 
             } else if (Objects.equals(cardDetailsArray[0], "6")) {
-                System.out.println("Discover Cards");
+                System.out.println("**Credit Card Type: Discover Cards");
 
-            }
+            }else {  System.out.println("**Credit Card Type: Invalid Card");}
         }
         int counter = 1;
         int[] secondDigitOfTheCard = new int[counter];
@@ -46,7 +46,7 @@ public class CreditCardValidator {
                 int num1 = sum % 10 ;
                 int num2 = sum /10 ;
                 int newSum = num1 + num2;
-                System.out.println(num2);
+
                 secondDigitOfTheCard[count] = newSum;
                 count ++;
             }
@@ -55,31 +55,36 @@ public class CreditCardValidator {
             secondDigitOfTheCard[count] = Integer.parseInt(cardDetailsArray[j] ) * 2;
             count++;
         }}
+
+        System.out.printf("**Credit Card Number: %s%n**Credit Card Digit Length:%s%n",
+                cardDetails, cardDetailsArray.length);
         int sum1 = 0 ;
-        System.out.println(Arrays.toString(secondDigitOfTheCard));
+
         for (int number = 0; number < secondDigitOfTheCard.length; number++) {
 
                     sum1 += secondDigitOfTheCard[number];}
-        System.out.println(sum1);
+
         int sum2 = 0;
         for (int number = cardDetailsArray.length -1 ; number >= 0 ; number-=2) {
             sum2 += Integer.parseInt(cardDetailsArray[number]);
 
         }
-        System.out.println(sum2);
+
         if((sum1 + sum2)% 10 == 0){
-            System.out.println("Card is Valid");
+            System.out.println("**Credit Card Validity Status: Valid");
         }
         else{
-            System.out.println("invalid card details");
+            System.out.println("**Credit Card Validity Status: Invalid");
         }
+        System.out.println("***************************************");
+
     }
 
 
 
 }
 
-       // int [] secondDigitOfTheCard = new int[counter];
+
 
 
 

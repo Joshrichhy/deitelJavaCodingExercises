@@ -28,92 +28,57 @@ public class myerBriggs {
     }
     private static void questionaire(){
         System.out.println("""
-                1.
-                A. expand energy, enjoy groups
-                B. conserve energy, enjoy one-on-one
+                          A                                          B
+                1. expand energy, enjoy groups           conserve energy, enjoy one-on-one
                 
-                2.
-                A. interpret literally
-                B. look for meaning and possibilities
+                2. interpret literally                   look for meaning and possibilities                                             
                 
-                3.
-                A. logical, thinking, questioning
-                B. empathetic, feeling, accomodating
+                3. logical, thinking, questioning         empathetic, feeling, accomodating
+                 
+                4. organized, orderly                     flexible, adaptable
+               
+                5. more outgoing, think aloud             more reserved, think to yourself
+               
+                6. practical, realistic, experimental     imaginative, innovative, theoretical
                 
-                4. 
-                A. organized, orderly
-                B. flexible, adaptable
+                7. candid, straight forward, frank        tactful, kind, encouraging
+               
+                8. plan, schedule                         unplanned, sponteneous
                 
-                5. 
-                A. more outgoing, think aloud
-                B. more reserved, think to yourself
+                9. seek many tasks, public activities,    seek private, solitary activities
+                    interaction with others
                 
-                6.
-                A. practical, realistic, experimental
-                B. imaginative, innovative, theoretical
+                10. standard, usual, conventional         different, novel, unique
                 
-                7.
-                A. candid, straight forward, frank
-                B. tactful, kind, encouraging
+                11. firm, tend to criticize, hold         gentle, tend to appreciate, conciliate
+                    the line  
+               
+                12. regulated, structured                 easygoing live and let live
+               
+                13. external, communicative,              internal, reticent, keep to yourself
+                    express yourself
                 
-                8.
-                A. plan, schedule
-                B. unplanned, sponteneous
+                14. focus on here-and- now                look to the future, global perspective, big picture
                 
-                9. 
-                A. seek many tasks, public activities, interaction with others
-                B. seek private, solitary activities, 
+                15. tough-minded, just                    tender-hearted, merciful
                 
-                10.
-                A. standard, usual, conventional
-                B. different, novel, unique
+                16. preparation, plan ahead               go with the flow, adapt as you go
                 
-                11. 
-                A. firm, tend to criticize, hold the line
-                B. gentle, tend to appreciate, conciliate
+                17. active, initiate                      reflective, deliberate
                 
-                12. 
-                A. regulated, structured
-                B. easygoing live and let live
+                18. fact, things, what is                 ideas, dreams, what could be, philosophical
                 
-                13.
-                A. external, communicative, express yourself
-                B. internal, reticent, keep to yourself
+                19. matter of fact, issue oriented        sensitive, people-oriented, compassionate
                 
-                14. 
-                A. focus on here-and- now
-                B. look to the future, global perspective, big picture
-                
-                15.
-                A. tough-minded, just
-                B. tender-hearted, merciful
-                
-                16. 
-                A. preparation, plan ahead
-                B. go with the flow, adapt as you go
-                
-                17.
-                A. active, initiate
-                B. reflective, deliberate
-                
-                18. 
-                A. fact, things, what is
-                B. ideas, dreams, what could be, philosophical
-                
-                19. 
-                A. matter of fact, issue oriented
-                B. sensitive, people-oriented, compassionate
-                
-                20.
-                A. control, govern
-                B. latitude, freedom""");
+                20. control, govern                       latitude, freedom
+                 """);
 
 
     }
 
     private static void forEandI(){
-        int A = 0;
-        int B = 0;
+        int optionA = 0;
+        int optionB = 0;
         String[] compartmentA = new String[5];
         compartmentA[0] = answers[0];
         compartmentA[1] = answers[4];
@@ -124,22 +89,22 @@ public class myerBriggs {
         for (int i = 0; i < compartmentA.length; i++) {
             if (compartmentA[i].equals("A")){
                 System.out.println((i+1) +" "+ compartmentA[i]);
-                A++;
+                optionA++;
             }
-            else if(compartmentA[i].equals("B")) {B++;
+            else if(compartmentA[i].equals("B")) {optionB++;
                 System.out.println((i+1) +" "+ compartmentA[i]);}
 
         }
-        System.out.printf("A has %d while B is %d%n", A, B);
+        System.out.printf("optionA has %d while optionB is %d%n", optionA, optionB);
 
-    if (A > B) {result[0] = "E";
+    if (optionA > optionB) {result[0] = "E";
         }
     else { result[0] = "I";}
     }
 
     private static void forSandN(){
-        int A = 0;
-        int B = 0;
+        int optionA = 0;
+        int optionB = 0;
         String[] compartmentB = new String[5];
         compartmentB[0] = answers[1];
         compartmentB[1] = answers[5];
@@ -150,21 +115,21 @@ public class myerBriggs {
         for (int i = 0; i < compartmentB.length; i++) {
             if (compartmentB[i].equals("A")){
                 System.out.println((i+1) +" "+ compartmentB[i]);
-                A++;
+                optionA++;
             }
-            else if(compartmentB[i].equals("B")) {B++;
+            else if(compartmentB[i].equals("B")) {optionB++;
                 System.out.println((i+1) +" "+ compartmentB[i]);}
 
         }
-        System.out.printf("A has %d while B is %d%n", A, B);
+        System.out.printf("optionA has %d while optionB is %d%n", optionA, optionB);
 
-        if (A > B) {result[1] = "S";
+        if (optionA > optionB) {result[1] = "S";
         }
         else { result[1] = "N";}
     }
     private static void forTandF(){
-        int A = 0;
-        int B = 0;
+        int optionA = 0;
+        int optionB = 0;
         String[] compartmentC = new String[5];
         compartmentC[0] = answers[2];
         compartmentC[1] = answers[6];
@@ -175,22 +140,22 @@ public class myerBriggs {
         for (int i = 0; i < compartmentC.length; i++) {
             if (compartmentC[i].equals("A")){
                 System.out.println((i+1) +" "+ compartmentC[i]);
-                A++;
+                optionA++;
             }
-            else if(compartmentC[i].equals("B")) {B++;
+            else if(compartmentC[i].equals("B")) {optionB++;
                 System.out.println((i+1) +" "+ compartmentC[i]);}
 
         }
-        System.out.printf("A has %d while B is %d%n", A, B);
+        System.out.printf("optionA has %d while optionB is %d%n", optionA, optionB);
 
-        if (A > B) {result[2] = "T";
+        if (optionA > optionB) {result[2] = "T";
         }
         else { result[2] = "F";}
     }
 
     private static void forJandP(){
-        int A = 0;
-        int B = 0;
+        int optionA = 0;
+        int optionB = 0;
         String[] compartmentD = new String[5];
         compartmentD[0] = answers[3];
         compartmentD[1] = answers[7];
@@ -201,31 +166,31 @@ public class myerBriggs {
         for (int i = 0; i < compartmentD.length; i++) {
             if (compartmentD[i].equals("A")){
                 System.out.println((i+1) +" "+ compartmentD[i]);
-                A++;
+                optionA++;
             }
-            else if(compartmentD[i].equals("B")) {B++;
+            else if(compartmentD[i].equals("B")) {optionB++;
                 System.out.println((i+1) +" "+ compartmentD[i]);}
 
         }
-        System.out.printf("A has %d while B is %d%n", A, B);
+        System.out.printf("optionA has %d while optionB is %d%n", optionA, optionB);
 
-        if (A > B) {result[3] = "J";
+        if (optionA > optionB) {result[3] = "J";
         }
         else { result[3] = "P";}
     }
 
     private static void displayResult(){
-        int A = 0;
-        int B= 0;
+        int optionA = 0;
+        int optionB= 0;
         for (int i = 0; i < answers.length; i++) {
             if (answers[i].equals("A")){
-                A++;
+                optionA++;
             }
-            else if(answers[i].equals("B")) {B++;
+            else if(answers[i].equals("B")) {optionB++;
                }
 
         }
-        System.out.printf("A has %d while B is %d%n", A, B);
+        System.out.printf("optionA has %d while optionB is %d%n", optionA, optionB);
         forSandN();forEandI();forTandF();forJandP();
         System.out.println(Arrays.toString(result));
         System.out.println("I HOPE THIS HELPS YOU TO KNOW YOUR PERSONALITY TYPE");
