@@ -104,10 +104,6 @@ int highestScoringStudent = 0;
         }
 
 
-
-
-
-
     }
 
     public static void scoreConstraint() {
