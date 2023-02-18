@@ -29,7 +29,7 @@ public class DiaryApp {
                 4 -> Count Entry
                 5 -> Delete Entry
                 6 -> View All Entries
-                7 -> overWrite Entry 
+                7 -> overWrite Entry
                 8 -> Exit
                 """;
         String userInput = input(mainMenu);
