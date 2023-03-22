@@ -31,11 +31,8 @@ public class Account {
     public BigDecimal withdraw(BigDecimal amount, String pin) {
         var result = balance.compareTo(amount);
         if (result < 0) throw new IllegalArgumentException("Insufficient fund");
-
         validatePin(pin);
-
         balance = balance.subtract(amount);
-
         return balance;
 
 }

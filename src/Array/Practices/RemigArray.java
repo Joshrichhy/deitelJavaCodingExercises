@@ -9,7 +9,7 @@ public class RemigArray {
         for(int i = 0; i < myNumber.length; i+= 1){
 
             myNumber[i] = i + 1;
-            System.out.println(myNumber[i]);
+            System.out.println(Arrays.toString(myNumber));
         }
 
 

@@ -24,6 +24,7 @@ public class ATMachine {
                 7 -> Check Account Info
                 8 -> Exit
                 """;
+        display(mainMenu);
         String userInput = input(mainMenu);
         switch (userInput.charAt(0)){
             case '1' -> createAccount();
