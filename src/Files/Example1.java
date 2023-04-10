@@ -10,7 +10,7 @@ import java.util.Iterator;
 public class Example1 {
     public static void main(String[] args){
         Path path = Paths.get("a/b/c.java");
-        Path path1 = Path.of("C:\\Users\\USER\\Desktop\\FilesCreation");
+        Path path1 = Path.of("C:\\Users\\USER\\Desktop\\Database works");
 
 
         try ( DirectoryStream<Path> directoryStream=  Files.newDirectoryStream(path1)) {

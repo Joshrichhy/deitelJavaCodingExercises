@@ -17,18 +17,14 @@ public class Regex {
         System.out.println(matcher.matches());
 
         String [] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "September", "November", "December"};
-        String dob = "01/01/1970";
+        String dob = "01/6/1970";
         String[] d = dob.split("/");
         String mo = d[1];
         int m = Integer.parseInt(mo) - 1;
-    StringBuilder newDate = new StringBuilder(Arrays.toString(d));
-
-       newDate.replace(4, 7, months[m]);
-       newDate.replace(3, 4, " ");
-
+        StringBuilder newDate = new StringBuilder(Arrays.toString(d));
+        newDate.replace(3, 6," "+ months[m]);
         System.out.println(newDate);
-        DateTimeFormatter userDate = DateTimeFormatter.ofPattern(dob);
-        System.out.println(userDate );
+
 
         }
 
