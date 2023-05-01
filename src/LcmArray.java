@@ -2,7 +2,8 @@ import java.util.Arrays;
 
 public class LcmArray {
     public static void main(String[] args) {
-        int number = 20;
+        int number = 12;
+        System.out.println(Arrays.toString(divisible(number)));
     }
 
     public static int numbersOfDivible(int numbers) {
@@ -15,7 +16,7 @@ public class LcmArray {
         return counter;
     }
 
-    public int[] divisible(int number) {
+    public static int[] divisible(int number) {
         int counter = 0;
         int [] divisibles = new int[numbersOfDivible(number)];
         for (int i = 2; i <= number; i++) {

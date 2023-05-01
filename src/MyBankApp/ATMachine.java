@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class ATMachine {
+public class
+ATMachine {
     private static Scanner keyboardInputCollector = new Scanner(System.in);
     private static Bank wemaBank = new Bank();
     public static void main(String[] args) {
